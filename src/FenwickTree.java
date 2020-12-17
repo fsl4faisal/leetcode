@@ -4,8 +4,8 @@ public class FenwickTree {
 	public static void main(String[] args) {
 		int[] nums = { 3, 2, -1, 6, 5, 4, -3, 3, 7, 2, 3 };
 		NumArray obj = new NumArray(nums);
-		obj.update(i, val);
-		int param_2 = obj.sumRange(i, j);
+		//obj.update(i, val);
+		//int param_2 = obj.sumRange(i, j);
 	}
 }
 
