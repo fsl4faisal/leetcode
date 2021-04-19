@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-import org.json.JSONArray;
+//import org.json.JSONArray;
 
 class Solution {
 	public int findMaxForm(String[] strs, int m, int n) {
@@ -62,32 +62,32 @@ class Solution {
 }
 
 public class FindMaxForm {
-	public static String[] stringToStringArray(String line) {
-
-		JSONArray jsonArr = new JSONArray(line);
-		String[] arr = new String[jsonArr.length()];
-		for (int i = 0; i < jsonArr.length(); i++) {
-			arr[i] = (String) jsonArr.get(i);
-		}
-
-		return arr;
-	}
+//	public static String[] stringToStringArray(String line) {
+//
+//		//JSONArray jsonArr = new JSONArray(line);
+//		String[] arr = new String[jsonArr.length()];
+//		for (int i = 0; i < jsonArr.length(); i++) {
+//			arr[i] = (String) jsonArr.get(i);
+//		}
+//
+//		return arr;
+//	}
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		String line;
 		while ((line = in.readLine()) != null) {
-			String[] strs = stringToStringArray(line);
+			//String[] strs = stringToStringArray(line);
 			line = in.readLine();
 			int m = Integer.parseInt(line);
 			line = in.readLine();
 			int n = Integer.parseInt(line);
 
-			int ret = new Solution().findMaxForm(strs, m, n);
+			//int ret = new Solution().findMaxForm(strs, m, n);
 
-			String out = String.valueOf(ret);
+			//String out = String.valueOf(ret);
 
-			System.out.print(out);
+			//System.out.print(out);
 		}
 	}
 }
